@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title=" Ver Cliente"
+        android:id="@+id/mncliente"/>
+    <item android:title="Ver Prestamo"
+        android:id="@+id/mnprestamo"/>
+    <item android:title="Acerda De"
+        android:id="@+id/acerca"/>
+    <item
+        android:id="@+id/mnnuevocl"
+        android:icon="@drawable/ic_launcher_persona"
+        android:title="cliente"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mnnuevop"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="Nuevo Prestamo"
+        app:showAsAction="always" />
+
+
+
+
+</menu>
