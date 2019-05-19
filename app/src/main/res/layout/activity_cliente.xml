@@ -22,47 +22,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <Button
-        android:id="@+id/npres"
-        android:layout_width="159dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Nuevo Prestamo"
-        android:onClick="onClick3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnsig"
-        android:layout_width="wrap_content"
-        android:layout_height="47dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Siguiente"
-        android:onClick="onClick3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/btnatras"
-        android:layout_width="wrap_content"
-        android:layout_height="49dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Anterior"
-        android:onClick="onClick3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnsig"
-        app:layout_constraintStart_toEndOf="@+id/npres" />
-
     <ListView
-        android:id="@+id/listclient"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/rvcliente"
+        android:layout_width="369dp"
+        android:layout_height="607dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 </android.support.constraint.ConstraintLayout>

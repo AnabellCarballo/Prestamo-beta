@@ -35,7 +35,7 @@ public class InicioActivity extends AppCompatActivity {
                 Intent intent = new Intent(InicioActivity.this,MainActivity.class);
                 startActivityForResult( intent, 4444 );
                 break;
-            case R.id.mnnuevop:
+            case R.id.mncancelar:
                 Intent intent1 = new Intent(InicioActivity.this,Main2ActivityRegistro.class);
                 //intent1.putExtra("res",nombre.getText().toString());
                 startActivityForResult( intent1, 4434 );

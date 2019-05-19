@@ -14,7 +14,7 @@
         android:title="cliente"
         app:showAsAction="always" />
     <item
-        android:id="@+id/mnnuevop"
+        android:id="@+id/mncancelar"
         android:icon="@drawable/ic_launcher_background"
         android:title="Nuevo Prestamo"
         app:showAsAction="always" />
