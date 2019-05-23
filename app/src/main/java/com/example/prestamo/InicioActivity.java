@@ -69,9 +69,9 @@ public class InicioActivity extends AppCompatActivity {
         if (requestCode==4444)
         {
             if (resultCode== RESULT_CANCELED) {
-                h = data.getExtras().getString("valor2");
-                historial.append("\n");
-                historial.append(h);
+//                h = data.getExtras().getString("valor2");
+//                historial.append("\n");
+//                historial.append(h);
             }
             else
             {

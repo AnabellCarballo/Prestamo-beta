@@ -16,17 +16,11 @@ public class Lvprestamos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lvprestamos);
 
-        ListView lvprestamos =  findViewById(R.id.lvprestamos);
-        
+        ListView lvprestamos =  findViewById(R.id.lvPrestamos);
 
+        Datos.prestamos.add(new Prestamo("jorge", "carballo", "14/8/19", "14/10/19", "2", "76", "56", "33", "2"));
         prestamoAdapter = new PrestamoAdapter(this,R.layout.itemprestamo,Datos.prestamos);
         lvprestamos.setAdapter(prestamoAdapter);
-
-       //Toast.makeText(this, Datos.prestamos.get(0).getNombre(), Toast.LENGTH_SHORT).show();
-
-
-
-
 
     }
 }
