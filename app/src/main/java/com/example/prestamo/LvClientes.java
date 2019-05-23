@@ -71,7 +71,9 @@ public class LvClientes extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 4443)
             if (resultCode == RESULT_OK) {
-
+//                Bundle bundle= data.getExtras();
+//                Cliente cliente= (Cliente) bundle.get("posicion");
+//                l.add(cliente);
                 clienteAdapter.notifyDataSetChanged();
             }
     }
