@@ -22,7 +22,7 @@ public class Lvprestamos extends AppCompatActivity {
         prestamoAdapter = new PrestamoAdapter(this,R.layout.itemprestamo,Datos.prestamos);
         lvprestamos.setAdapter(prestamoAdapter);
 
-       Toast.makeText(this, Datos.prestamos.get(0).getNombre(), Toast.LENGTH_SHORT).show();
+       //Toast.makeText(this, Datos.prestamos.get(0).getNombre(), Toast.LENGTH_SHORT).show();
 
 
 

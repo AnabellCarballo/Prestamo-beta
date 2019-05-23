@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.GridLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -19,6 +20,7 @@ import android.widget.Toast;
 
 public class LvClientes extends AppCompatActivity {
     private ClienteAdapter clienteAdapter;
+    private  ArrayAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +71,7 @@ public class LvClientes extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 4443)
             if (resultCode == RESULT_OK) {
+
                 clienteAdapter.notifyDataSetChanged();
             }
     }

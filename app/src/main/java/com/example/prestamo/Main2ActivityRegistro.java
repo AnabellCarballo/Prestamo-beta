@@ -79,34 +79,6 @@ public class Main2ActivityRegistro extends AppCompatActivity {
        // adapters.notifyDataSetChanged();
 
 
-        Button btn = findViewById(R.id.btnguardar);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-                Prestamo m = new Prestamo();
-
-              m.setFechainicio(fecha.getText().toString());
-              m.setNombre(rcliente.getSelectedItem().toString());
-              m.setMonto(monto.getText().toString());
-              m.setInteres(interes.getSelectedItem().toString());
-              m.setCuota(cuota.getText().toString());
-              m.setPlazo(plazo.getText().toString().toString());
-              m.setPaga(paga.getText().toString());
-
-
-                Datos.prestamos.add(m);
-                Intent intent = getIntent();
-                intent.putExtra("valor", "Ingreso de nuevo Prestamo");
-                setResult(RESULT_OK,intent);
-                finish();
-
-
-
-            }
-        });
-
 
         //usamos la propiedad formatter para poder asiggnar el formato de la fecha el cual recibe un objeto tipo date
         String dt = formatter.format(cal);
@@ -219,7 +191,7 @@ public class Main2ActivityRegistro extends AppCompatActivity {
                 m.setPaga(paga.getText().toString());
 
 
-                Datos.prestamos.add(m);
+               prestamos.add(m);
                 Intent intent = getIntent();
                 intent.putExtra("valor", "Ingreso de nuevo Prestamo");
                 setResult(RESULT_OK,intent);
@@ -261,16 +233,5 @@ public class Main2ActivityRegistro extends AppCompatActivity {
 
     }
 
-
-
-    public void onClick2(View view) {
-
-        Intent intent = getIntent();
-        intent.putExtra("valor2", "Cancelo ingreso nuevo Prestamo");
-            setResult(RESULT_CANCELED, intent);
-        finish();
-
-
-    }
 }
 
