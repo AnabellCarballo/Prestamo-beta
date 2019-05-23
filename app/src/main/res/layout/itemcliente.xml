@@ -31,7 +31,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/tvapellido"
+                android:id="@+id/tvApellido"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
@@ -47,7 +47,7 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/tvapellido"
+                app:layout_constraintStart_toEndOf="@+id/tvApellido"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.421"
                 app:srcCompat="@drawable/ic_pencil_edit_button"

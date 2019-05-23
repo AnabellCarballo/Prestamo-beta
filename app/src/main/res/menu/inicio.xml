@@ -4,8 +4,7 @@
 
     <item android:title=" Ver Cliente"
         android:id="@+id/mncliente"/>
-    <item android:title="Ver Prestamo"
-        android:id="@+id/mnprestamo"/>
+
     <item android:title="Acerda De"
         android:id="@+id/acerca"/>
     <item
@@ -14,7 +13,7 @@
         android:title="cliente"
         app:showAsAction="always" />
     <item
-        android:id="@+id/mncancelar"
+        android:id="@+id/mnprestamo"
         android:icon="@drawable/ic_launcher_background"
         android:title="Nuevo Prestamo"
         app:showAsAction="always" />

@@ -3,6 +3,8 @@ package com.example.prestamo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.text.Editable;
@@ -188,6 +190,49 @@ public class Main2ActivityRegistro extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.prestamosm, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.mnguardar:
+
+                Prestamo m = new Prestamo();
+
+                m.setFechainicio(fecha.getText().toString());
+                m.setFechafin(fechafin.getText().toString());
+                m.setNombre(rcliente.getSelectedItem().toString());
+                m.setMonto(monto.getText().toString());
+                m.setInteres(interes.getSelectedItem().toString());
+                m.setCuota(cuota.getText().toString());
+                m.setPlazo(plazo.getText().toString().toString());
+                m.setPaga(paga.getText().toString());
+
+
+                Datos.prestamos.add(m);
+                Intent intent = getIntent();
+                intent.putExtra("valor", "Ingreso de nuevo Prestamo");
+                setResult(RESULT_OK,intent);
+                finish();
+
+
+                break;
+
+            case R.id.mncancelar:
+                Intent intent2 = getIntent();
+                intent2.putExtra("valor2", "Cancelo ingreso nuevo Prestamo");
+                setResult(RESULT_CANCELED, intent2);
+                finish();
+                break;
+
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
     public void calcular()
     {
 

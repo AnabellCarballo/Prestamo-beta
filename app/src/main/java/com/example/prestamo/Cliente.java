@@ -1,6 +1,8 @@
 package com.example.prestamo;
 
-public class Cliente {
+import java.io.Serializable;
+
+public class Cliente  implements Serializable {
     public String apellido;
     public String cedula;
     public String telefono;
@@ -10,6 +12,16 @@ public class Cliente {
     public String nombre;
 
     public  Cliente(){}
+
+    public Cliente(String nombre, String apellido,String telefono,String cedula,String direccion, String sexo, String ocupacion) {
+        this.nombre = nombre;
+        this.apellido= apellido;
+        this.sexo = sexo;
+        this.direccion = direccion;
+        this.cedula = cedula;
+        this.ocupacion = ocupacion;
+        this.telefono = telefono;
+    }
 
     public String getNombre() {
         return nombre;

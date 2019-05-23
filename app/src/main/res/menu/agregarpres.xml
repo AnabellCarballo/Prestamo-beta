@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/agregar"
+        android:id="@+id/mnagregar"
         android:icon="@drawable/ic_anadir_mas"
         android:title="Item"
         app:showAsAction="always" />

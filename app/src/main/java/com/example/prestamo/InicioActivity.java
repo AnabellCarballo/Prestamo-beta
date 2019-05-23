@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -43,11 +44,13 @@ public class InicioActivity extends AppCompatActivity {
 
                 break;
             case R.id.mncliente:
-                Intent intent2 = new Intent(InicioActivity.this,ClienteActivity.class);
-                startActivity(intent2);
+                //Log.d("prueba","MenuCliente");
+               Intent intent2 = new Intent(this,LvClientes.class);
+               startActivity(intent2);
+
                 break;
             case R.id.mnprestamo:
-                Intent intent3 = new Intent(InicioActivity.this,PrestamoActivity.class);
+                Intent intent3 = new Intent(InicioActivity.this,Lvprestamos.class);
                 startActivity(intent3);
                 break;
             case R.id.acerca:
