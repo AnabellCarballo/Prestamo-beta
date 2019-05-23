@@ -30,6 +30,9 @@ public class Main2ActivityRegistro extends AppCompatActivity {
     private Spinner spcliente;
     private String recibido=null;
     private  ArrayAdapter<String> adapter;
+    private  PrestamoAdapter adapters;
+    private  List<Prestamo> prestamoList = new ArrayList<>();
+
 
         //declaraciones
     Spinner  rcliente;
@@ -59,7 +62,6 @@ public class Main2ActivityRegistro extends AppCompatActivity {
         monto = findViewById(R.id.monto);
         paga = findViewById(R.id.paga);
         cuota = findViewById(R.id.cuota);
-        interes = findViewById(R.id.interes);
         plazo = findViewById(R.id.plazo);
         rcliente = findViewById(R.id.spcliente);
 
@@ -72,6 +74,11 @@ public class Main2ActivityRegistro extends AppCompatActivity {
             rcliente.setAdapter(adapter);
         }
 
+       // adapters = new PrestamoAdapter(this, R.layout.itemprestamo,prestamoList);
+        Datos.prestamos.add(new Prestamo("Anabell" ,"Carballo","10/05/03","10-02-05","8","500","600","90","56"));
+       // adapters.notifyDataSetChanged();
+
+
         Button btn = findViewById(R.id.btnguardar);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,7 +88,6 @@ public class Main2ActivityRegistro extends AppCompatActivity {
                 Prestamo m = new Prestamo();
 
               m.setFechainicio(fecha.getText().toString());
-              m.setFechafin(fechafin.getText().toString());
               m.setNombre(rcliente.getSelectedItem().toString());
               m.setMonto(monto.getText().toString());
               m.setInteres(interes.getSelectedItem().toString());

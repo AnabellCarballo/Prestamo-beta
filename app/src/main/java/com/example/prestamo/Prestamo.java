@@ -1,5 +1,7 @@
 package com.example.prestamo;
 
+import android.print.PageRange;
+
 public class Prestamo {
     public String Nombre;
     public String Apellido;
@@ -12,6 +14,19 @@ public class Prestamo {
     public String interes;
 
     public  Prestamo(){}
+
+    public Prestamo(String Nombre,String Apelllido,String fechainicio,String fechafin,String plazo,String monto,String paga,String cuota,String interes)
+    {
+        this.Nombre = Nombre;
+        this.Apellido = Apelllido;
+        this.fechainicio = fechainicio;
+        this.fechafin=fechafin;
+        this.plazo= plazo;
+        this.monto = monto;
+        this.plazo = paga;
+        this.cuota = cuota;
+        this.interes = interes;
+    }
 
     public String getPlazo() {
         return plazo;
